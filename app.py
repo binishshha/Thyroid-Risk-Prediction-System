@@ -80,3 +80,42 @@ if st.button("Predict Thyroid Risk"):
 
     st.subheader("Top Feature Contributions")
     st.dataframe(result["feature_contributions"].head(10))
+
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #ffffff;
+        color: #333333;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-top: 1px solid #e0e0e0;
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .footer:hover {
+        background-color: #f8f9fa;
+        color: #000000;
+    }
+    .footer a {
+        color: #1a73e8;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    </style>
+
+    <div class="footer">
+        © 2026 Binisha Basnet — <a href="https://github.com/binishshha" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/binisha-basnet-515a612b1/" target="_blank">LinkedIn</a>
+    </div>
+""",
+    unsafe_allow_html=True,
+)
